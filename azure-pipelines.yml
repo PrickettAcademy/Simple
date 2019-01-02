@@ -6,7 +6,7 @@
 trigger:
 - master
 
-queue: 'default'
+queue: 'default' 
 
 steps:
 - script: echo Hello, world!
