@@ -9,8 +9,8 @@ resources:
  repositories:
    - repository: myControlRepo
      type: git
-     name: myControlRepo
-     ref: master
+     name: demo-jlp/myControlRepo
+     ref: refs/heads/master
 
 extends:
   template: base.yml@myControlRepo
