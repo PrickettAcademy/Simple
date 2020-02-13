@@ -9,7 +9,7 @@ resources:
  repositories:
    - repository: myControlRepo
      type: git
-     name: demo-jlp/myControlRepo
+     name: myControlRepo
      ref: refs/heads/master
 
 extends:
