@@ -13,4 +13,4 @@ resources:
      ref: master
 
 extends:
-  template: base.yml@myControlRepo
+  template: base2.yml@myControlRepo
