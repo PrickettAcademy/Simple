@@ -1,0 +1,10 @@
+# base for extending
+jobs:
+- deployment: one
+  pool: 'default'
+  environment: 'PROD'
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo Using PROD env
