@@ -1,8 +1,8 @@
 # base 3 for extending
 jobs:
 - deployment: one
-  pool: 'default'
-  environment: 'PROD'
+  pool: default
+  environment: PROD
   strategy:
     runOnce:
       deploy:
