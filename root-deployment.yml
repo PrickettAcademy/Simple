@@ -1,9 +1,10 @@
+# root for extending
 jobs:
-- deployment: one
-  pool: 'default'
-  environment: 'env1'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - script: echo root yml file
+- deployment: one
+  pool: default
+  environment: PROD
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo root yml file
