@@ -6,4 +6,4 @@
 trigger: none
 
 extends:
- template: PROD/base-template.yml
+ template: PROD/base-deployment.yml
