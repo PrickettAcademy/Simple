@@ -1,4 +1,11 @@
 # base 2 for extending
+resources:
+  repositories:
+    - repository: this
+      type: github
+      name: PrickettAcademy/Simple
+      endpoint: mygh
+
 jobs:
 - deployment: one
   pool: default
@@ -8,3 +15,4 @@ jobs:
       deploy:
         steps:
         - script: echo Using PROD env from base-deployment-2
+        - checkout: this
