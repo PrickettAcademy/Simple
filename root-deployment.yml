@@ -1,13 +1,15 @@
 # root for extending
-jobs:
-- deployment: one
-  pool: default
-  environment: PROD
-  resources:
+resources:
+  repositories:
     - repository: this
       type: github
       name: PrickettAcademy/Simple
       endpoint: mygh
+
+jobs:
+- deployment: one
+  pool: default
+  environment: PROD
   strategy:
     runOnce:
       deploy:
