@@ -3,8 +3,14 @@ jobs:
 - deployment: one
   pool: default
   environment: PROD
+  resources:
+    - repository: this
+      type: github
+      name: PrickettAcademy/Simple
+      endpoint: mygh
   strategy:
     runOnce:
       deploy:
         steps:
         - script: echo root yml file
+        - checkout: this
